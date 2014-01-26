@@ -1,5 +1,9 @@
 SampleApp::Application.routes.draw do
   root to: 'static_page#home'
+  get "static_page/home"
+  get "static_page/help"
+  get "static_page/about"
+  get "static_page/contact"
   match '/home', to: 'static_page#home', via: 'get'
   match '/help', to: 'static_page#help', via: 'get'
   match '/about', to: 'static_page#about', via: 'get'
